@@ -1,0 +1,342 @@
+  /* 초기화 */
+  *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0 auto;
+    font-family: 'Texturina', serif;
+  }
+  ul,li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  /* 스크롤 스무스 */
+  html{
+    scroll-behavior: smooth;
+  }
+
+  /* 헤더 */
+  header{
+    height: 100vh;
+    background-image: url(img/1.jpeg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+/* 율무 */
+#yullmoo_btn{
+    z-index: 5;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-image: url(img/yull.jpg);
+    background-position: center;
+    background-size: 160%;
+    border-radius: 50%;
+    right: 270px;
+    top: 410px;
+    transition: 0.5s;
+}
+#yullmoo_btn a{
+    display: none;
+}
+#yullmoo_btn:hover{
+    transform: rotate(0.5turn);
+    transition: 0.5s;
+}
+#yullmoo_btn:hover a{
+    display: block;
+    color: white;
+    line-height: 130px;
+    font-size: 26px;
+    background:rgb(0,0,0,0.5);
+    border-radius: 50%;
+}
+/* 메인네비 */
+#main_nav{
+    z-index: 6;
+    padding-top: 15px;
+    padding-right: 40px;
+}
+nav a{
+    color: white;
+    font-size: 18px;
+    /* font-weight: 400; */
+}
+nav a:hover{
+    color: rgb(226, 138, 116);
+    text-decoration-line: underline;
+}
+#main_nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
+nav ul li:last-child{
+    padding-right: 0;
+}
+/* 헤더내용 */
+header h1{
+    margin: 0;
+    margin-top: 17%;
+    font-size: 110px;
+}
+header h2{
+    margin-top: -15px;
+    font-size: 40px;
+    opacity: 0.8;
+}
+#contents{
+    position: relative;
+    padding-top: 50px;
+    height: 1000px;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+#sub_nav{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#sub_nav a{
+    color: black;
+}
+#sub_nav ul{
+    padding: 0;
+    border-top: 2px solid crimson;
+    border-bottom: 2px solid darkgreen;
+    height: 60px;
+    line-height: 60px;
+}
+
+#contents h1{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+#contents p{
+
+    margin-top: 20px;
+    font-size: 18px;
+}
+.poster{
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  margin-bottom: 30px;
+}
+/* 스케줄 */
+.container{
+    border: 5px solid rgb(8, 78, 6);
+    width: 1000px;
+}
+.box{
+    padding: 80px 0;
+    margin: 0 auto;
+    width: 850px;
+}
+#schedule .program li{
+    list-style: lower-alpha
+}
+#schedule h3{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+    color: rgb(63, 63, 63);
+    font-weight: 600;
+}
+#schedule .info{
+    margin-top: 20px;
+    background: rgb(241, 240, 240);
+    height: 500px;
+    border-radius: 25px;
+}
+#schedule .info .info_list{
+    padding: 30px 0 0 30px;
+    font-size: 18px;
+}
+#schedule .info .info_list a{
+  color: #000;
+  text-decoration: underline;
+}
+#schedule .info .info_list a:hover{
+    color: #fff;
+    background: #000;
+}
+#schedule .info .info_list > li{
+    padding: 5px;
+}
+#schedule .program{
+    padding: 10px 0 10px 30px;
+    font-size: 16px;
+}
+img{
+    margin-top: 20px;
+}
+
+/* 신청곡 */
+.in{
+    width: 700px;
+    height: 60px;
+}
+.btn{
+    width: 100px;
+    height: 60px;
+}
+/* 율무내용 */
+#yullmoo img{
+    padding: 5px;
+    width: 400px;
+    transition: 0.3s;
+}
+/* .ple{
+  position: relative;
+  height: 2000px;
+} */
+#yullmoo img:hover{
+    transition: 0.3s;
+    transform: scale(1.5);
+}
+/* 푸터 */
+footer{
+  position: relative;
+  bottom: 0;
+    height: 150px;
+    background-image: url(img/1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+footer div{
+    height: 150px;
+    background-color: rgb(0,0,0,0.6);
+}
+
+#schedule, #song_form, #yullmoo{
+    display: none;
+}
+
+/* 추가 */
+.b_cat{
+    transition: ease-in-out;
+    position: absolute;
+    /* margin-left: 30px; */
+    margin: 0 auto;
+}
+#schedule,#song_form, #yullmoo{
+    display: none;
+}
+#info.show,
+#schedule.show,
+#song_form.show,
+#yullmoo.show{
+    display: block;
+}
+#contents.show{
+  height: 5200px;
+}
+
+
+
+
+/* 애니메이션 */
+  .animated {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+  /*the animation definition*/
+  @-webkit-keyframes swing {
+    20% {
+      -webkit-transform: rotate3d(0, 0, 1, 15deg);
+      transform: rotate3d(0, 0, 1, 15deg)
+    }
+    40% {
+      -webkit-transform: rotate3d(0, 0, 1, -10deg);
+      transform: rotate3d(0, 0, 1, -10deg)
+    }
+    60% {
+      -webkit-transform: rotate3d(0, 0, 1, 5deg);
+      transform: rotate3d(0, 0, 1, 5deg)
+    }
+    80% {
+      -webkit-transform: rotate3d(0, 0, 1, -5deg);
+      transform: rotate3d(0, 0, 1, -5deg)
+    }
+    100% {
+      -webkit-transform: rotate3d(0, 0, 1, 0deg);
+      transform: rotate3d(0, 0, 1, 0deg)
+    }
+  }
+  @keyframes swing {
+    20% {
+      -webkit-transform: rotate3d(0, 0, 1, 15deg);
+      -ms-transform: rotate3d(0, 0, 1, 15deg);
+      transform: rotate3d(0, 0, 1, 15deg)
+    }
+    40% {
+      -webkit-transform: rotate3d(0, 0, 1, -10deg);
+      -ms-transform: rotate3d(0, 0, 1, -10deg);
+      transform: rotate3d(0, 0, 1, -10deg)
+    }
+    60% {
+      -webkit-transform: rotate3d(0, 0, 1, 5deg);
+      -ms-transform: rotate3d(0, 0, 1, 5deg);
+      transform: rotate3d(0, 0, 1, 5deg)
+    }
+    80% {
+      -webkit-transform: rotate3d(0, 0, 1, -5deg);
+      -ms-transform: rotate3d(0, 0, 1, -5deg);
+      transform: rotate3d(0, 0, 1, -5deg)
+    }
+    100% {
+      -webkit-transform: rotate3d(0, 0, 1, 0deg);
+      -ms-transform: rotate3d(0, 0, 1, 0deg);
+      transform: rotate3d(0, 0, 1, 0deg)
+    }
+  }
+  .swing {
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing
+  }
+  
+
+  .test{
+    width: 500px;height: 790px;
+    background-image: url(./img/1607356645823.jpg);
+    background-size: cover;
+    position: absolute;
+    z-index: 999;
+    left: 130px; top: 100px;
+  }
+  .test>.close_box{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(221, 221, 221);
+    text-align: right;
+    padding: 5px 5px;
+  }
+  .test>.close_box .close_button{
+    width: 70px;
+  }
